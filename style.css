@@ -1,8 +1,5 @@
-@import '~normalize.css'; 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
-
-$primary: #03396c;
-$secondary: #b3cde0;
 
 * {
     user-select: none;
@@ -11,10 +8,12 @@ $secondary: #b3cde0;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
 }
-html, body {
+
+html,
+body {
     min-height: 100%;
     height: 100%;
-    background-color: $primary;
+    background-color: #03396c;
     position: relative;
 }
 
@@ -25,11 +24,11 @@ main {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -44,28 +43,30 @@ footer {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 
-footer > div {
+footer>div {
     margin-right: 1rem;
 }
 
 h1 {
-    color: $secondary;
+    color: #b3cde0;
     font-size: 5rem;
 }
 
 h2 {
-    color: $secondary;
+    color: #b3cde0;
     font-size: 2rem;
 }
 
-a, a:active, a:visited {
+a,
+a:active,
+a:visited {
     outline: none;
     color: transparent;
 }
@@ -98,14 +99,24 @@ a, a:active, a:visited {
     }
 }
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
     font-family: Flaticon;
     font-size: 20px;
     font-style: normal;
     color: #b3cde0;
 }
 
-.flaticon-linkedin:before { content: "\f100"; }
-.flaticon-github:before { content: "\f101"; }
-.flaticon-email:before { content: "\f102"; }
+.flaticon-linkedin:before {
+    content: "\f100";
+}
+
+.flaticon-github:before {
+    content: "\f101";
+}
+
+.flaticon-email:before {
+    content: "\f102";
+}
